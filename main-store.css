@@ -16,3 +16,8 @@
 @media(max-width:850px){.equipment-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){.equipment-grid{gap:10px}.equipment-card{padding:15px 14px}.equipment-visual{height:85px;margin-bottom:14px}.equipment-visual svg{width:65px;height:65px}.equipment-card h3{font-size:16px}.equipment-card p{font-size:12px;margin-bottom:14px}.equipment-link{font-size:12px}}
 @media(prefers-reduced-motion:reduce){.equipment-card{transition:none}}
+
+.section-title>.avito-review-link{display:inline-flex;align-items:center;gap:17px;color:var(--ink);flex-shrink:0}
+.avito-review-link .avito-name{font-size:22px}
+.avito-all-reviews{font-size:13px;font-weight:400;color:var(--dark)}
+@media(max-width:600px){.section-title>.avito-review-link{gap:12px}.avito-review-link .avito-name{font-size:20px}.avito-all-reviews{font-size:12px}}
