@@ -17,7 +17,10 @@
 @media(max-width:600px){.equipment-grid{gap:10px}.equipment-card{padding:15px 14px}.equipment-visual{height:85px;margin-bottom:14px}.equipment-visual svg{width:65px;height:65px}.equipment-card h3{font-size:16px}.equipment-card p{font-size:12px;margin-bottom:14px}.equipment-link{font-size:12px}}
 @media(prefers-reduced-motion:reduce){.equipment-card{transition:none}}
 
-.section-title>.avito-review-link{display:inline-flex;align-items:center;gap:17px;color:var(--ink);flex-shrink:0}
+.section-title>.avito-review-link{display:inline-flex;align-items:center;gap:17px;row-gap:9px;color:var(--ink);flex-wrap:wrap;max-width:100%}
 .avito-review-link .avito-name{font-size:22px}
-.avito-all-reviews{font-size:13px;font-weight:400;color:var(--dark)}
-@media(max-width:600px){.section-title>.avito-review-link{gap:12px}.avito-review-link .avito-name{font-size:20px}.avito-all-reviews{font-size:12px}}
+.avito-rating{display:inline-flex;align-items:center;gap:10px;white-space:nowrap}
+.avito-rating strong{font-size:22px;line-height:1.2}
+.avito-rating-stars{color:#f9c535;font-size:23px;letter-spacing:1px;line-height:1}
+.avito-review-count{font-size:16px;font-weight:400;color:var(--dark)}
+@media(max-width:600px){.section-title>.avito-review-link{gap:12px;row-gap:8px}.avito-review-link .avito-name{font-size:20px}.avito-rating{gap:8px}.avito-rating strong{font-size:20px}.avito-rating-stars{font-size:19px}.avito-review-count{font-size:14px}}
