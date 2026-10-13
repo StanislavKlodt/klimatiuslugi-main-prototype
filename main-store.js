@@ -43,16 +43,27 @@ form?.addEventListener('submit', event => {
 });
 const photoDialog = document.querySelector('.photo-dialog');
 const fullPhoto = document.querySelector('#full-photo');
+const fullPhotoPlaceholder = document.querySelector('#full-photo-placeholder');
 document.querySelectorAll('[data-photo]').forEach(button => button.addEventListener('click', () => {
   document.querySelector('#photo-title').textContent = button.dataset.caption || 'Фото работы';
-  fullPhoto.src = button.dataset.photo;
-  fullPhoto.alt = button.querySelector('img')?.alt || button.dataset.caption || 'Фото работы';
+  if (fullPhotoPlaceholder) {
+    fullPhotoPlaceholder.textContent = button.dataset.imageBrief;
+    fullPhotoPlaceholder.setAttribute('aria-label', button.dataset.imageBrief);
+  } else {
+    fullPhoto.src = button.dataset.photo;
+    fullPhoto.alt = button.querySelector('img')?.alt || button.dataset.caption || 'Фото работы';
+  }
   photoDialog.showModal();
 }));
 document.querySelector('[data-proof]')?.addEventListener('click', () => {
-  document.querySelector('#photo-title').textContent = 'Отзывы — скриншот с сайта компании';
-  fullPhoto.src = 'assets/store/avito-reviews-published.png';
-  fullPhoto.alt = 'Исторический скриншот отзывов Авито, опубликованный на сайте Климат и услуги';
+  document.querySelector('#photo-title').textContent = 'Скриншот отзывов Авито';
+  if (fullPhotoPlaceholder) {
+    fullPhotoPlaceholder.textContent = 'Нужен актуальный скриншот профиля Авито: название компании, рейтинг, количество отзывов и несколько реальных отзывов клиентов. Текст должен быть читаемым.';
+    fullPhotoPlaceholder.setAttribute('aria-label', fullPhotoPlaceholder.textContent);
+  } else {
+    fullPhoto.src = 'assets/store/avito-reviews-published.png';
+    fullPhoto.alt = 'Исторический скриншот отзывов Авито, опубликованный на сайте Климат и услуги';
+  }
   photoDialog.showModal();
 });
 document.querySelectorAll('dialog').forEach(dialog => {

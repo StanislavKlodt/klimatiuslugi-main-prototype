@@ -79,3 +79,30 @@
 
 @media(min-width:601px) and (max-width:850px){.service-promos{height:330px}}
 @media(max-width:600px){.service-promos{height:auto}.service-promos .slide,.service-banner{height:auto}}
+
+/* Image briefs for the prototype; the showroom gallery keeps its original photos. */
+.image-placeholder{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:10px;min-width:0;min-height:100px;padding:24px;background:#edf1f5;border:1px dashed #a8b6c5;border-radius:6px;color:#596b7c;text-align:center;font-size:14px;line-height:1.5;font-weight:400;white-space:normal}
+.image-placeholder strong{display:block;font-size:16px;color:#34485c;font-weight:600}
+.image-placeholder>span{display:block;max-width:350px}
+.brand-mark:has(.logo-placeholder){aspect-ratio:auto;overflow:visible}
+.logo-placeholder{min-height:44px;padding:5px 8px;gap:0;font-size:10px;line-height:1.3}
+.logo-placeholder strong{font-size:12px}
+.service-banner>.image-placeholder{height:100%;border-radius:0;min-height:0;padding:30px}
+.consultation-card>.image-placeholder{height:105px;flex-shrink:0;min-height:105px;padding:10px;gap:4px;font-size:11px;line-height:1.3}
+.consultation-card>.image-placeholder strong{font-size:13px}
+.service-image-brief{margin-bottom:20px}
+.service-image-brief .image-placeholder{min-height:130px;padding:15px;font-size:12px;gap:6px}
+.service-image-brief .image-placeholder strong{font-size:13px}
+.equipment-placeholder{padding:0!important;display:block!important;height:auto!important}
+.equipment-placeholder .image-placeholder{min-height:140px;padding:14px;font-size:12px;gap:6px}
+.equipment-placeholder .image-placeholder strong{font-size:13px}
+.brands .brand-placeholder{height:80px;min-height:80px;padding:8px;gap:3px;font-size:10px}
+.brands .brand-placeholder strong{font-size:12px}
+.payment>.image-placeholder{min-height:150px}
+.case-photo>.image-placeholder{position:static;display:flex;width:100%;height:100%;min-height:0;border-radius:0;padding:24px;font-size:13px;background:#edf1f5;color:#596b7c}
+.case-photo>.image-placeholder strong{font-size:16px}
+.case-photo>.image-placeholder>span{position:static;width:auto;height:auto;border-radius:0;background:none;display:block;font-size:13px;color:inherit}
+.modal-placeholder{min-height:400px;padding:40px;font-size:20px}
+@media(max-width:600px){.engineer-card.consultation-card{grid-template-columns:1fr}.consultation-card>.image-placeholder{grid-row:auto!important;height:auto!important;min-height:115px!important;padding:16px!important;font-size:12px!important;line-height:1.5!important}.consultation-card>.image-placeholder strong{font-size:14px!important}}
+@media(max-width:850px){.consultation-card>.image-placeholder{grid-row:1/4;height:150px;min-height:0;font-size:12px}}
+@media(max-width:600px){.service-banner>.image-placeholder{grid-row:1;height:180px;padding:20px;font-size:13px}.service-banner>.image-placeholder strong{font-size:16px}.consultation-card>.image-placeholder{grid-row:1/3;height:120px;min-height:0;padding:6px;font-size:9px;line-height:1.25}.consultation-card>.image-placeholder strong{font-size:11px}.service-image-brief{margin-bottom:14px}.service-image-brief .image-placeholder{padding:10px;min-height:130px;font-size:11px}.service-image-brief .image-placeholder strong{font-size:12px}.equipment-placeholder .image-placeholder{padding:10px;min-height:145px;font-size:11px}.brands .brand-placeholder{height:85px;min-height:85px;padding:6px;font-size:10px}.brands .brand-placeholder strong{font-size:11px}.payment>.image-placeholder{min-height:140px;padding:20px;font-size:12px}.modal-placeholder{min-height:280px;padding:24px;font-size:16px}}
