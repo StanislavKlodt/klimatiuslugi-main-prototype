@@ -24,3 +24,58 @@
 .avito-rating-stars{color:#f9c535;font-size:23px;letter-spacing:1px;line-height:1}
 .avito-review-count{font-size:16px;font-weight:400;color:var(--dark)}
 @media(max-width:600px){.section-title>.avito-review-link{gap:12px;row-gap:8px}.avito-review-link .avito-name{font-size:20px}.avito-rating{gap:8px}.avito-rating strong{font-size:20px}.avito-rating-stars{font-size:19px}.avito-review-count{font-size:14px}}
+
+/* Main page: agreed changes after the client call. */
+.logo .brand-mark{display:block;width:100%;aspect-ratio:635/86;overflow:hidden}
+.logo .brand-mark img{width:100%;max-width:none;height:auto}
+.brand-description{display:block;color:#556675;font-size:10.5px;line-height:1.4;margin-top:4px;white-space:nowrap}
+.logo:hover{text-decoration:none}
+.service-promos{aspect-ratio:auto;height:350px;min-height:350px;background:#f3f7fb;border:1px solid var(--line)}
+.service-promos .slide{height:100%}
+.service-banner{display:grid;grid-template-columns:1.05fr 1fr;min-height:350px;color:var(--ink);background:#f3f7fb}
+.service-banner:hover{text-decoration:none}
+.banner-copy{padding:34px 28px 58px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
+.banner-label{font-size:12px;color:var(--dark);font-weight:600;margin-bottom:14px}
+.banner-copy h2{font-size:29px;line-height:1.18;letter-spacing:-.5px;margin:0 0 14px;font-weight:600}
+.banner-copy p{font-size:14px;line-height:1.55;color:var(--muted);margin:0 0 22px}
+.banner-copy .button{font-size:13px;gap:12px;padding:12px 16px}
+.service-banner>img{width:100%;height:100%;min-height:350px;object-fit:cover;object-position:center}
+.service-promos .slider-controls{right:auto;left:28px;gap:16px;bottom:18px}
+.service-promos .dots button{background:#b4c9db}
+.service-promos .dots button[aria-pressed=true]{background:var(--blue);box-shadow:none}
+.engineer-card.consultation-card{background:var(--pale);color:var(--ink);border:1px solid var(--line);padding:18px;gap:12px;min-height:0;display:flex;align-items:stretch}
+.consultation-card img{position:static;width:100%;height:105px;object-fit:cover;object-position:center;border-radius:5px}
+.consultation-card h2{font-size:22px;line-height:1.2;margin:0;color:var(--ink)}
+.consultation-card p{max-width:none;font-size:13px;line-height:1.5;margin:0;color:var(--muted)}
+.consultation-card .button{position:static;margin-top:auto;width:100%;font-size:13px;min-height:44px;padding:11px 12px}
+.reviews-platforms{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.review-rating-badge{display:flex;align-items:center;gap:13px;row-gap:7px;flex-wrap:wrap;border:1px solid var(--line);padding:10px 14px;border-radius:8px;color:var(--ink);max-width:100%}
+.review-rating-badge:hover{text-decoration:none;border-color:#97c9f5}
+.review-rating-badge .avito-name{font-size:20px}
+.review-rating-badge .avito-rating strong{font-size:20px}
+.review-rating-badge .avito-rating-stars{font-size:19px}
+.review-rating-badge .avito-review-count{font-size:13px}
+.yandex-name{display:flex;align-items:center;gap:7px;font-size:16px;font-weight:600}
+.yandex-name svg{width:20px;height:20px;stroke:none;fill:#f65042}
+.yandex-name svg circle{fill:white}
+.yandex-all-reviews{font-size:13px;color:var(--dark)}
+.review-person>.review-platform{font-size:10px;white-space:nowrap;color:var(--dark)}
+.case-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.case-card{border:1px solid var(--line);border-radius:9px;overflow:hidden;display:flex;flex-direction:column;background:white}
+.case-photo{position:relative;border:0;padding:0;background:var(--pale);width:100%;height:230px;text-align:left}
+.case-photo img{width:100%;height:100%;object-fit:cover}
+.case-photo>span{position:absolute;right:14px;bottom:14px;display:grid;place-items:center;border-radius:50%;background:#fffe;color:var(--dark);width:32px;height:32px;font-size:22px}
+.case-copy{padding:22px;display:flex;flex-direction:column;flex:1}
+.case-kind{font-size:11px;color:var(--muted);margin-bottom:10px}
+.case-copy h3{font-size:20px;line-height:1.25;margin:0 0 12px}
+.case-copy>p{font-size:14px;line-height:1.55;color:var(--muted);margin:0 0 18px}
+.case-copy dl{font-size:13px;margin:0 0 22px}
+.case-copy dt{font-size:11px;color:var(--muted);margin-bottom:6px}
+.case-copy dd{margin:0}
+.case-copy>.text-button{margin-top:auto;font-size:13px;font-weight:600}
+@media(max-width:1100px){.banner-copy{padding-left:24px;padding-right:20px}.banner-copy h2{font-size:26px}.brand-description{font-size:8.6px}.consultation-card h2{font-size:21px}.review-rating-badge{padding:10px 12px;gap:10px}}
+@media(max-width:850px){.brand-description{font-size:8.8px}.service-promos,.service-banner{min-height:330px}.service-banner>img{min-height:330px}.engineer-card.consultation-card{display:grid;grid-template-columns:160px 1fr;column-gap:22px;padding:20px;align-items:center}.consultation-card img{grid-row:1/4;height:150px}.consultation-card h2{font-size:22px}.consultation-card p{max-width:none}.consultation-card .button{width:auto;justify-self:start;margin:0}.consultation-card h2 br{display:none}.reviews-platforms{gap:10px}.case-grid{gap:12px}.case-photo{height:190px}.case-copy{padding:18px}.case-copy h3{font-size:18px}}
+@media(max-width:600px){.brand-description{font-size:7.7px;margin-top:3px}.service-promos{min-height:0;aspect-ratio:auto}.service-banner{grid-template-columns:1fr;min-height:0}.service-banner>img{grid-row:1;height:180px;min-height:0;object-position:center 43%}.banner-copy{padding:22px 20px 60px;min-height:228px}.banner-label{font-size:11px;margin-bottom:10px}.banner-copy h2{font-size:25px;max-width:310px;margin-bottom:12px}.banner-copy p{font-size:13px;margin-bottom:18px;max-width:310px}.banner-copy .button{font-size:12px;min-height:40px}.service-promos .slider-controls{left:20px;bottom:17px}.engineer-card.consultation-card{grid-template-columns:86px 1fr;gap:12px 15px;padding:16px}.consultation-card img{grid-row:1/3;height:98px;border-radius:5px}.consultation-card h2{font-size:18px;max-width:none}.consultation-card p{font-size:12px;line-height:1.5;max-width:none}.consultation-card .button{grid-column:1/-1;width:100%;justify-self:stretch;font-size:13px;min-height:42px;margin:0}.reviews-platforms{width:100%;gap:9px}.review-rating-badge{padding:11px 13px;width:100%;justify-content:space-between;gap:10px}.review-rating-badge .avito-name{font-size:19px}.review-rating-badge .avito-rating strong{font-size:19px}.review-rating-badge .avito-rating{gap:7px}.review-rating-badge .avito-rating-stars{font-size:17px}.review-rating-badge .avito-review-count{font-size:12px}.yandex-name{font-size:15px}.review-person>.review-platform{white-space:normal;max-width:82px;text-align:right}.case-grid{grid-template-columns:1fr;gap:18px}.case-photo{height:230px}.case-copy{padding:20px}.case-copy h3{font-size:21px}}
+
+@media(min-width:601px) and (max-width:850px){.service-promos{height:330px}}
+@media(max-width:600px){.service-promos{height:auto}.service-promos .slide,.service-banner{height:auto}}

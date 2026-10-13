@@ -44,9 +44,9 @@ form?.addEventListener('submit', event => {
 const photoDialog = document.querySelector('.photo-dialog');
 const fullPhoto = document.querySelector('#full-photo');
 document.querySelectorAll('[data-photo]').forEach(button => button.addEventListener('click', () => {
-  document.querySelector('#photo-title').textContent = 'Фото работы';
+  document.querySelector('#photo-title').textContent = button.dataset.caption || 'Фото работы';
   fullPhoto.src = button.dataset.photo;
-  fullPhoto.alt = button.querySelector('img').alt;
+  fullPhoto.alt = button.querySelector('img')?.alt || button.dataset.caption || 'Фото работы';
   photoDialog.showModal();
 }));
 document.querySelector('[data-proof]')?.addEventListener('click', () => {
